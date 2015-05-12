@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/card1.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="bg">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png"></a>
+				</div>
+				<div class="fr header_right" id="header_right">
+					<div id="header_right_person" class="header_right_person fl">
+						<a class="btn h-btn db fl" href="javascript:showBg('d-login');">登陆 / 注册</a>			
+						<div class="clear"></div>
+					</div>
+					<div class="send_nav">
+						<div class="send"><img src="img/send.png"></div>
+						<div class="space"></div>
+						<img class="tra" src="img/subnav.png" />
+						<ul>
+							<li class="li-btn"><a>发布图片</a></li>
+							<li class="li-btn"><a>发起活动</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="logo_big"><img src="img/logo.png"></div>
+			<p>与美好不期而遇</p>
+			<div class="content_btn">
+				<div class="main_btn fl"><a href="javascript:showBg('d-kantu');"><img src="img/btn_kantu.png"></a></div>
+				<div class="main_btn fr"><a  href="javascript:showBg('d-yuepian');"><img src="img/btn_yuepian.png"></a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+        
+        <div id="fullbg"></div> 
+        <div class="dialog d-login"> 
+            <span class="close"><a href="#" onclick="closeBg();">关闭</a></span>  
+            <div class="logo_big"><img src="img/logo.png"></div>
+			<p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+            <div class="login">
+                <form class="form-wrapper">
+                    <input type="text" name="user" placeholder="请输入用户名">
+                    <input type="text" name="password" placeholder="请输入密码">
+                    <button type="submit" class="login-button" id="login-button" onclick="closeBg();">登&nbsp;录</button>
+                </form>
+            </div>
+            <div class="cut top"></div>
+            <p id="or">or</p>
+            <div class="cut bottom"></div>
+            <div class="register">
+                <form class="form-wrapper">
+                    <input type="text" name="user" placeholder="请输入用户名">
+                    <input type="text" name="password" placeholder="请输入密码">
+                    <input type="text" name="password" placeholder="请确认密码">
+                    <button type="submit" class="register-button">注&nbsp;册</button>
+                </form>
+            </div>
+        </div>
+        <div class="dialog d-kantu"> 
+            <span class="close z2"><a href="#" onclick="closeBg();">关闭</a></span>  
+            <div class="card z1">
+                <div class="img_obj fl">
+                    <div class="img_obj1 fl">
+                        <a href="kantu-detail.html"><img src="img/kantu-img1.png">
+                        <div class="describe des1 pa"></div>
+                        <div class="date date1 pa">2015-05-01·Skyrelu</div>
+                        <div class="num num1 pa">6</div>
+                        <div class="title title1 pa">会相逢的注定要相逢</div>
+                        <div class="hot hot1 pa">300热度·10000次浏览</div>
+                        </a>
+                    </div>
+                    <div class="img_obj2 fl">
+                        <a href="kantu-detail.html">
+                            <img src="img/kantu-img2.png">                        
+                        <div class="describe des2 pa"></div>
+                        <div class="date date2 pa">2015-05-01·Skyrelu</div>
+                        <div class="num num2 pa">6</div>
+                        <div class="title title2 pa">随你走过人生以后的未知</div>
+                        <div class="hot hot2 pa">300热度·10000次浏览</div>
+                        </a>
+                    </div>
+                    <div class="img_obj3 fl">
+                        <a href="kantu-detail.html">
+                            <img src="img/kantu-img3.JPG">
+                        <div class="describe des3 pa"></div>
+                        <div class="date date3 pa">2015-05-01·UtopiaS</div>
+                        <div class="num num3 pa">6</div>
+                        <div class="title title3 pa">阳光和尘土的味道</div>
+                        <div class="hot hot3 pa">300热度·10000次浏览</div>
+                        </a>
+                    </div>
+                    <div class="img_obj4 fl">
+                        <a href="kantu-detail.html">
+                            <img src="img/kantu-img4.png">
+                        <div class="describe des4 pa"></div>
+                        <div class="date date4 pa">2015-05-01·Skyrelu</div>
+                        <div class="num num4 pa">6</div>
+                        <div class="title title4 pa">流波上的旧梦</div>
+                        <div class="hot hot4 pa">300热度·10000次浏览</div>
+                        </a>
+                    </div>
+                    <div class="img_obj5 fl">
+                        <a href="kantu-detail.html">
+                            <img src="img/kantu-img5.JPG">
+                        <div class="describe des5 pa"></div>
+                        <div class="date date5 pa">2015-05-01·UtopiaS</div>
+                        <div class="num num5 pa">6</div>
+                        <div class="title title5 pa">满怀虚无缥缈的快乐与愁绪</div>
+                        <div class="hot hot5 pa">300热度·10000次浏览</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_title fr">
+                    <h1><span class="s1 pa">看图</span><img class="s2 pa" src="img/xiexian_03.png"><span class="s3 pa">来去自由</span></h1>
+                    <p class="p2 pa">只拥有一生一世是不够的</p>
+                    <p class="p3 pa">还要拥有诗意的世界</p>
+                </div>
+            </div>
+        </div>
+        <div class="dialog d-yuepian"> 
+            <span class="close z2"><a href="#" onclick="closeBg();">关闭</a></span>  
+            		<div class="card z1">
+			<div class="img_obj fl">
+				<div class="img_obj1 fl">
+					<a href="yuepian-detail.html"><img src="img/yuepian-img1.jpg">
+					<div class="describe des1 pa"></div>
+					<div class="date date1 pa">2015-05-01·UtopiaS</div>
+					<div class="place place1 pa">厦门</div>
+					<div class="title title1 pa">五十号公路</div>
+					<div class="hot hot1 pa">300热度·10000次浏览</div>
+                    </a>
+				</div>
+				<div class="img_obj2 fl">
+					<a href="yuepian-detail.html">
+						<img src="img/yuepian-img2.jpg">
+					<div class="describe des2 pa"></div>
+					<div class="date date2 pa">2015-05-01·UtopiaS</div>
+					<div class="place place2 pa">厦门</div>
+					<div class="title title2 pa">今天与明天在厦大相逢</div>
+					<div class="hot hot2 pa">300热度·10000次浏览</div>
+                    </a>
+				</div>
+				<div class="img_obj3 fl">
+					<a href="yuepian-detail.html">
+						<img src="img/yuepian-img3.JPG">
+					<div class="describe des3 pa"></div>
+					<div class="date date3 pa">2015-05-01·Skyrelu</div>
+					<div class="place place3 pa">厦门</div>
+					<div class="title title3 pa">有时是海洋·On the island</div>
+					<div class="hot hot3 pa">300热度·10000次浏览</div>
+                    </a>
+				</div>
+				<div class="img_obj4 fl">
+					<a href="yuepian-detail.html">
+						<img src="img/yuepian-img4.JPG">
+					<div class="describe des4 pa"></div>
+					<div class="date date4 pa">2015-05-01·Skyrelu</div>
+					<div class="place place4 pa">厦门</div>
+					<div class="title title4 pa">贝壳和航海图以及单车上的吉他手</div>
+					<div class="hot hot4 pa">300热度·10000次浏览</div>
+                    </a>
+				</div>
+				<div class="img_obj5 fl">
+					<a href="yuepian-detail.html">
+						<img src="img/yuepian-img5.JPG">
+					<div class="describe des5 pa"></div>
+					<div class="date date5 pa">2015-05-01·UtopiaS</div>
+					<div class="place place5 pa">厦门</div>
+					<div class="title title5 pa">深秋的鹭岛全是浆果和狂风</div>
+					<div class="hot hot5 pa">300热度·10000次浏览</div>
+                    </a>
+				</div>
+			</div>
+			<div class="card_title fr">
+				<h1><span class="s1 pa">约片</span><img class="s2 pa" src="img/xiexian_03.png"><span class="s3 pa">厦门之夏</span></h1>
+				<p class="p2 pa">一个微风早晨</p>
+				<p class="p3 pa">你我初次相遇</p>
+			</div>
+		</div>
+        </div>
+        <div class="dialog d-homepage"> 
+            <span class="close"><a href="#" onclick="closeBg();">关闭</a></span>  
+            <div class="information">
+                <a id="follow" class="btn db" href="#">+关注</a>
+                <img class="portrait" src="img/portrait.jpg">
+                <span class="user-name">秋风熳雨</span>
+                <span class="sign">reading or travelling</span>
+                <a id="fans" class="btn db" href="#">关注者：90</a>
+                <a id="follows" class="btn db" href="#">已关注： 50</a>
+                <ul class="i-details">
+                    <li>所在城市：厦门</li>
+                    <li>姓名：可选</li>
+                    <li>性别：女</li>
+                    <li>年龄：21</li>
+                    <li>常用器材：X-T1</li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g1.JPG"><span>木棉</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g2.jpg"><span>个人主页</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g3.jpg"><span>夜色</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g4.jpg"><span>光影流逝</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g5.jpg"><span>古镇</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g6.jpg"><span>西湖</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g7.jpg"><span>落叶</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g8.jpg"><span>狂风暴雨</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g9.jpg"><span>夕阳</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g10.jpg"><span>更多</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g11.jpg"><span>活动记录</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g12.jpg"><span>乌镇</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g13.jpg"><span>灯火</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g14.jpg"><span>倒影</span></a>
+                </div>
+                <div class="g-wrapper">
+                <a href="#"><img class="g" src="img/g15.jpg"><span>更多</span></a>
+                </div>
+            </div>
+        </div>
+        
+     </div>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>    
+	</body>
+
+</html>
