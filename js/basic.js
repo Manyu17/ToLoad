@@ -68,18 +68,16 @@ function mousedown_login(){
 }
 function mousedown_img_like(){
 	var img_like = document.getElementsByClassName("img-icon-like");
-	var i;
-	/* for(i = 0; i< img_like.length; i++)
-	{
+	 for(var i = 0; i< img_like.length; i++){
 		img_like[i].onclick = function(){
-			img_like[i].setAttribute("src","img/icon-like-down.png");
+			this.setAttribute("src","img/icon-like-down.png");
 		};
-	} */
+	}
 }
 var mousedown = function(){
 	mousedown_follow();
 	mousedown_like();
-	//mousedown_img_like();
+	mousedown_img_like();
 	mousedown_go();
 	mousedown_wait();
 	mousedown_login();
