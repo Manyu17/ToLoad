@@ -1,22 +1,21 @@
 
 //显示灰色 jQuery 遮罩层
 function showBg(e) { 
-    var bh = $("body").height(); 
-    var bw = $("body").width(); 
     var bg = document.getElementsByClassName("bg");
     bg[0].setAttribute("class","bg_blur");
-    $("#fullbg").css({ 
-        height:bh, 
-        width:bw, 
-        display:"block" 
-    }); 
-    $("."+e).show(); 
+    var fullbg = document.getElementById("fullbg");
+    fullbg.style.display = "block"; 
+    var e = document.getElementsByClassName(e)[0];
+    e.style.display = "block";
 } 
 //关闭灰色 jQuery 遮罩 
-function closeBg() { 
+function closeBg(e) { 
     var bg = document.getElementsByClassName("bg_blur");
     bg[0].setAttribute("class","bg");
-    $("#fullbg,.dialog").hide(); 
+    var fullbg = document.getElementById("fullbg");
+    fullbg.style.display = "none";
+    var e = document.getElementsByClassName(e)[0];
+    e.style.display = "none";
 } 
 
 function mousedown_follow() {
