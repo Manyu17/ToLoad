@@ -1,5 +1,5 @@
 
-//显示灰色 jQuery 遮罩层
+//显示灰色遮罩层
 function showBg(e) { 
     var bg = document.getElementsByClassName("bg");
     bg[0].setAttribute("class","bg_blur");
@@ -8,7 +8,7 @@ function showBg(e) {
     var e = document.getElementsByClassName(e)[0];
     e.style.display = "block";
 } 
-//关闭灰色 jQuery 遮罩 
+//关闭灰色遮罩 
 function closeBg(e) { 
     var bg = document.getElementsByClassName("bg_blur");
     bg[0].setAttribute("class","bg");
